@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+h2{
+    color:orangered;
+}
+
+.colms button{
+    margin: 1px;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    border-color: black;
+}
+
+h1{
+    color: cyan;
+}
