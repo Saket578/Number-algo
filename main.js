@@ -14,37 +14,39 @@ var zero = ["B","C","D","F","J","K","O","P","T","U","Y","Z","Ad","Af","Ag","Ah"]
 
 var all = [one,two,three,four,five,six,seven,eight,nine];
 
-window.addEventListener("keydown", (e) => {
-   key = e.keyCode;
-   if(key == '49'){
-    x = one;
-    write();
-   }else if(key == '50'){
-    x = two;
-    write();
-   }else if(key == '51'){
-    x = three;
-    write();
-   }else if(key == '52'){
-    x = four;
-    write();
-   }else if(key == '53'){
-    x = five;
-    write();
-   }else if(key == '54'){
-    x = six;
-    write();
-   }else if(key == '55'){
-    x = seven;
-    write();
-   }else if(key == '56'){
-    x = eight;
-    write();
-   }else if(key == '57'){
-    x = nine;
-    write();
-   }
-});
+function work(e){
+    key = e.keyCode;
+    if(key == '49'){
+     x = one;
+     write();
+    }else if(key == '50'){
+     x = two;
+     write();
+    }else if(key == '51'){
+     x = three;
+     write();
+    }else if(key == '52'){
+     x = four;
+     write();
+    }else if(key == '53'){
+     x = five;
+     write();
+    }else if(key == '54'){
+     x = six;
+     write();
+    }else if(key == '55'){
+     x = seven;
+     write();
+    }else if(key == '56'){
+     x = eight;
+     write();
+    }else if(key == '57'){
+     x = nine;
+     write();
+    }
+ }
+
+window.addEventListener("keydown", work);
 
 function write() {
     var btns = document.querySelectorAll('button');
